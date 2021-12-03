@@ -9,6 +9,14 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
+.page__description {
+  margin-top: 100px;
+}
+
+.page__digits {
+  margin: 100px 0;
+}
+
 .header {
   height: 100vh;
   min-height: 600px;
@@ -17,10 +25,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.indent {
-  margin-bottom: 100px;
+  background-color: #f2f2f2;
 }
 
 .logo {
@@ -62,7 +67,7 @@
 }
 
 .header__link {
-  color: #1e90ff;
+  color: #2f80ed;
   text-decoration: none;
 }
 
@@ -86,7 +91,7 @@
   position: absolute;
   top: 64px;
   right: 0;
-  background-color: #1e90ff;
+  background-color: #2f80ed;
 }
 
 .description {
@@ -105,7 +110,7 @@
 .two-columns__brief {
   width: 175px;
   margin: 0;
-  color: #1e90ff;
+  color: #2f80ed;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -126,7 +131,7 @@
   margin: 0;
 }
 
-.two-columns__accent {
+.two-columns__span-accent {
   font-weight: bold;
 }
 
@@ -151,6 +156,10 @@
   margin-bottom: 20px;
 }
 
+.section-title_theme_dark {
+  margin-bottom: 20px;
+}
+
 .section-subtitle {
   width: 60%;
   text-align: center;
@@ -166,6 +175,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   z-index: 1;
+  margin: 0;
+  padding: 0;
 }
 
 .table__cell {
@@ -189,22 +200,19 @@
 }
 
 .table__text {
-  margin: 0;
+  margin: 20px 0 0 0;
   line-height: 1.2;
   font-size: 18px;
 }
 
-.table__text:first-of-type {
-  margin: 20px 0 0 0;
-}
-
 .feynman {
-  height: 890px;
-  padding: 0;
+  min-height: 890px;
+  padding: 100px 0 0;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f2f2f2;
 }
 
 .feynman__title {
@@ -230,7 +238,7 @@
   right: 48px;
   line-height: 51px;
   font-size: 36px;
-  color: #1e90ff;
+  color: #2f80ed;
   text-decoration: none;
 }
 
@@ -249,7 +257,7 @@
 
 .kaufman {
   color: white;
-  background-color: black;
+  background-color: #1f1f1f;
   padding: 90px 0;
   display: flex;
   flex-direction: column;
@@ -265,14 +273,16 @@
   top: 0;
   right: -210px;
   background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
 }
 
 .footer {
   min-height: 350px;
-  background-color: black;
+  background-color: #1f1f1f;
   color: white;
   padding: 60px 0 40px;
   display: flex;
+  box-sizing: border-box;
 }
 
 .footer__columns {
