@@ -1,5 +1,5 @@
 .khan__buy-link {
-  height: 42px;
+  min-height: 42px;
   color: #2f80ed;
   text-decoration: none;
   line-height: 42px;
@@ -10,4 +10,5 @@
 .khan__buy-link:hover {
   opacity: 0.7;
   cursor: pointer;
+  transition: opacity 0.2s ease;
 }
